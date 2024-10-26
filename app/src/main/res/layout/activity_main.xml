@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/valentine" />
+    <ScrollView
+        android:id="@+id/viewr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintTop_toBottomOf="@id/lottieAnimationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="true"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/tvback"
+        android:fontFamily="@font/submit"
+        android:paddingTop="105dp"
+        android:paddingStart="75dp"
+        android:paddingEnd="75dp"
+        android:text="Dear My Madam,\n Happiest Birthday and Happiest Valentine Day Madam.Ku yaar bina kuch bole chali gyi kam se kam bata kar to jati madam. Kya hamse galti ho gyi jo hamko itna bada saja de rahi ho madam, do din se khana kya kuch nahi kar paa raha hu yaar . Sone ka Try karta hu to  nind nahi aati hai 2-3 ghante tak rote rah jata huu . Bas tumhara saath mangaa thaa naa madam aage ka ham dekhtee naa kya kar sakte hai ya nahi aur tumne promise bhi kiya thaa ki rahogi phir bii aisee kuu yaar?.Aree yaar kuch bolne ka bhi mauka nahi dii yaar ki kyaa huaa kuch bhi aisa lag raha hai kii kya bolu mai bass anadar hi andar rote rahtaa hu yaar . plaease wapas aa jao madam. \n yours Senior Citizen "
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_l"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:circularflow_defaultRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottieAnimationView" />
+
+    </ScrollView>
+    <Button
+        android:id="@+id/nxtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewr"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Video Dekhlo"
+        android:fontFamily="@font/submit"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+
+
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
